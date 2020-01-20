@@ -1,0 +1,25 @@
+PODS:
+  - Growing (2.8.7)
+  - GrowingAutoTrackKit (2.8.7):
+    - GrowingCoreKit (= 2.8.7)
+  - GrowingCoreKit (2.8.7):
+    - Growing (= 2.8.7)
+
+DEPENDENCIES:
+  - GrowingAutoTrackKit (= 2.8.7)
+  - GrowingCoreKit (= 2.8.7)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Growing
+    - GrowingAutoTrackKit
+    - GrowingCoreKit
+
+SPEC CHECKSUMS:
+  Growing: 00a416c9a7fcb65ee073e8f60758529a3c49602a
+  GrowingAutoTrackKit: 21e73b250a56b37f9dead410e8369009e110fea9
+  GrowingCoreKit: dc334babbca2fedac15191cc116cdf74b23e97aa
+
+PODFILE CHECKSUM: 62fce7353875832496636b89d347531cc88f5c2e
+
+COCOAPODS: 1.8.4

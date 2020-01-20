@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4937582E23CCC09700DC045E /* GIOMonitorCrashMachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937581823CCC09600DC045E /* GIOMonitorCrashMachineContext.c */; };
+		4937582F23CCC09700DC045E /* GIOMonitorCrashDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937581923CCC09600DC045E /* GIOMonitorCrashDynamicLinker.c */; };
+		4937583023CCC09700DC045E /* GIOMonitorCrashLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937581E23CCC09600DC045E /* GIOMonitorCrashLogger.c */; };
+		4937583123CCC09700DC045E /* GIOMonitorCrashCPU_x86_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937581F23CCC09600DC045E /* GIOMonitorCrashCPU_x86_32.c */; };
+		4937583223CCC09700DC045E /* GIOMonitorCrashCPU_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582023CCC09600DC045E /* GIOMonitorCrashCPU_arm64.c */; };
+		4937583323CCC09700DC045E /* GIOMonitorCrashMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582223CCC09600DC045E /* GIOMonitorCrashMemory.c */; };
+		4937583423CCC09700DC045E /* GIOMonitorCrashThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582323CCC09600DC045E /* GIOMonitorCrashThread.c */; };
+		4937583523CCC09700DC045E /* GIOMonitorCrashSymbolicator.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582523CCC09600DC045E /* GIOMonitorCrashSymbolicator.c */; };
+		4937583623CCC09700DC045E /* GIOMonitorCrashCPU_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582823CCC09700DC045E /* GIOMonitorCrashCPU_arm.c */; };
+		4937583723CCC09700DC045E /* GIOMonitorCrashCPU_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582923CCC09700DC045E /* GIOMonitorCrashCPU_x86_64.c */; };
+		4937583823CCC09700DC045E /* GIOMonitorCrashCPU.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582A23CCC09700DC045E /* GIOMonitorCrashCPU.c */; };
+		4937583923CCC09700DC045E /* GIOMonitorCrashStackCursor_MachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937582D23CCC09700DC045E /* GIOMonitorCrashStackCursor_MachineContext.c */; };
+		4937583C23CCC0F300DC045E /* GIOMonitorCrashStackCursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937583A23CCC0F200DC045E /* GIOMonitorCrashStackCursor.c */; };
+		4937584323CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4937584223CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.m */; };
+		4937584623CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937584423CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.c */; };
+		4937584923CCC4AD00DC045E /* GIOMonitorCrashMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937584823CCC4AD00DC045E /* GIOMonitorCrashMonitor.c */; };
+		4937584C23CCC4E100DC045E /* GIOMonitorCrashMonitorType.c in Sources */ = {isa = PBXBuildFile; fileRef = 4937584A23CCC4E100DC045E /* GIOMonitorCrashMonitorType.c */; };
+		49DCB2B523CF32C2006E04CB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DCB2B423CF32C2006E04CB /* MBProgressHUD.m */; };
+		49E1A99B23CC6BAF0033AB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A99A23CC6BAF0033AB45 /* AppDelegate.m */; };
+		49E1A9A123CC6BAF0033AB45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9A023CC6BAF0033AB45 /* ViewController.m */; };
+		49E1A9A423CC6BAF0033AB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1A9A223CC6BAF0033AB45 /* Main.storyboard */; };
+		49E1A9A623CC6BB00033AB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E1A9A523CC6BB00033AB45 /* Assets.xcassets */; };
+		49E1A9A923CC6BB00033AB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E1A9A723CC6BB00033AB45 /* LaunchScreen.storyboard */; };
+		49E1A9AC23CC6BB00033AB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9AB23CC6BB00033AB45 /* main.m */; };
+		49E1A9B623CC6BB00033AB45 /* LoadAddressDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9B523CC6BB00033AB45 /* LoadAddressDemoTests.m */; };
+		49E1A9D023CD5C900033AB45 /* GIOMonitorCrashReport.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9CE23CD5C900033AB45 /* GIOMonitorCrashReport.c */; };
+		49E1A9D523CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9D323CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.c */; };
+		49E1A9D823CD5D960033AB45 /* GIOMonitorCrashFileUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9D623CD5D960033AB45 /* GIOMonitorCrashFileUtils.c */; };
+		49E1A9DB23CD5DD10033AB45 /* GIOMonitorCrashString.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9DA23CD5DD10033AB45 /* GIOMonitorCrashString.c */; };
+		49E1A9DE23CD5E030033AB45 /* GIOMonitorCrashObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9DD23CD5E030033AB45 /* GIOMonitorCrashObjC.c */; };
+		49E1A9E123CD5E9E0033AB45 /* GIOMonitorCrashCachedData.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9DF23CD5E9E0033AB45 /* GIOMonitorCrashCachedData.c */; };
+		49E1A9E423CD5F700033AB45 /* GIOMonitorCrashReportStore.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9E323CD5F700033AB45 /* GIOMonitorCrashReportStore.c */; };
+		49E1A9EA23CD62040033AB45 /* GIOMonitorCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9E823CD62040033AB45 /* GIOMonitorCrash.m */; };
+		49E1A9EB23CD62040033AB45 /* GIOMonitorCrashC.c in Sources */ = {isa = PBXBuildFile; fileRef = 49E1A9E923CD62040033AB45 /* GIOMonitorCrashC.c */; };
+		B1F5D56D1E6D7FC0937B3FA8 /* Pods_LoadAddressDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AD0F90B830AC1846EB0CE4 /* Pods_LoadAddressDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49E1A9B223CC6BB00033AB45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E1A98E23CC6BAF0033AB45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49E1A99523CC6BAF0033AB45;
+			remoteInfo = LoadAddressDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186C130245F6F2DA63D62BA1 /* Pods-LoadAddressDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadAddressDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoadAddressDemo/Pods-LoadAddressDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4937581723CCC09500DC045E /* GIOMonitorCrashMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMemory.h; sourceTree = "<group>"; };
+		4937581823CCC09600DC045E /* GIOMonitorCrashMachineContext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashMachineContext.c; sourceTree = "<group>"; };
+		4937581923CCC09600DC045E /* GIOMonitorCrashDynamicLinker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashDynamicLinker.c; sourceTree = "<group>"; };
+		4937581A23CCC09600DC045E /* GIOMonitorCrashLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashLogger.h; sourceTree = "<group>"; };
+		4937581B23CCC09600DC045E /* GIOMonitorCrashStackCursor_MachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashStackCursor_MachineContext.h; sourceTree = "<group>"; };
+		4937581C23CCC09600DC045E /* GIOMonitorCrashSystemCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashSystemCapabilities.h; sourceTree = "<group>"; };
+		4937581D23CCC09600DC045E /* GIOMonitorCrashCPU_Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashCPU_Apple.h; sourceTree = "<group>"; };
+		4937581E23CCC09600DC045E /* GIOMonitorCrashLogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashLogger.c; sourceTree = "<group>"; };
+		4937581F23CCC09600DC045E /* GIOMonitorCrashCPU_x86_32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCPU_x86_32.c; sourceTree = "<group>"; };
+		4937582023CCC09600DC045E /* GIOMonitorCrashCPU_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCPU_arm64.c; sourceTree = "<group>"; };
+		4937582123CCC09600DC045E /* GIOMonitorCrashMachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMachineContext.h; sourceTree = "<group>"; };
+		4937582223CCC09600DC045E /* GIOMonitorCrashMemory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashMemory.c; sourceTree = "<group>"; };
+		4937582323CCC09600DC045E /* GIOMonitorCrashThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashThread.c; sourceTree = "<group>"; };
+		4937582423CCC09600DC045E /* GIOMonitorCrashCPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashCPU.h; sourceTree = "<group>"; };
+		4937582523CCC09600DC045E /* GIOMonitorCrashSymbolicator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashSymbolicator.c; sourceTree = "<group>"; };
+		4937582623CCC09600DC045E /* GIOMonitorCrashMachineContext_Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMachineContext_Apple.h; sourceTree = "<group>"; };
+		4937582723CCC09600DC045E /* GIOMonitorCrashSymbolicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashSymbolicator.h; sourceTree = "<group>"; };
+		4937582823CCC09700DC045E /* GIOMonitorCrashCPU_arm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCPU_arm.c; sourceTree = "<group>"; };
+		4937582923CCC09700DC045E /* GIOMonitorCrashCPU_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCPU_x86_64.c; sourceTree = "<group>"; };
+		4937582A23CCC09700DC045E /* GIOMonitorCrashCPU.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCPU.c; sourceTree = "<group>"; };
+		4937582B23CCC09700DC045E /* GIOMonitorCrashDynamicLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashDynamicLinker.h; sourceTree = "<group>"; };
+		4937582C23CCC09700DC045E /* GIOMonitorCrashThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashThread.h; sourceTree = "<group>"; };
+		4937582D23CCC09700DC045E /* GIOMonitorCrashStackCursor_MachineContext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashStackCursor_MachineContext.c; sourceTree = "<group>"; };
+		4937583A23CCC0F200DC045E /* GIOMonitorCrashStackCursor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashStackCursor.c; sourceTree = "<group>"; };
+		4937583B23CCC0F300DC045E /* GIOMonitorCrashStackCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashStackCursor.h; sourceTree = "<group>"; };
+		4937584123CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMonitor_NSException.h; sourceTree = "<group>"; };
+		4937584223CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIOMonitorCrashMonitor_NSException.m; sourceTree = "<group>"; };
+		4937584423CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashStackCursor_Backtrace.c; sourceTree = "<group>"; };
+		4937584523CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashStackCursor_Backtrace.h; sourceTree = "<group>"; };
+		4937584723CCC4AD00DC045E /* GIOMonitorCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMonitor.h; sourceTree = "<group>"; };
+		4937584823CCC4AD00DC045E /* GIOMonitorCrashMonitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashMonitor.c; sourceTree = "<group>"; };
+		4937584A23CCC4E100DC045E /* GIOMonitorCrashMonitorType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashMonitorType.c; sourceTree = "<group>"; };
+		4937584B23CCC4E100DC045E /* GIOMonitorCrashMonitorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMonitorType.h; sourceTree = "<group>"; };
+		4937584D23CCC52100DC045E /* GIOMonitorCrashMonitorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashMonitorContext.h; sourceTree = "<group>"; };
+		49DCB2B323CF32C2006E04CB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		49DCB2B423CF32C2006E04CB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		49E1A99623CC6BAF0033AB45 /* LoadAddressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadAddressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E1A99923CC6BAF0033AB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49E1A99A23CC6BAF0033AB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49E1A99F23CC6BAF0033AB45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49E1A9A023CC6BAF0033AB45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49E1A9A323CC6BAF0033AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49E1A9A523CC6BB00033AB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E1A9A823CC6BB00033AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E1A9AA23CC6BB00033AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E1A9AB23CC6BB00033AB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49E1A9B123CC6BB00033AB45 /* LoadAddressDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadAddressDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E1A9B523CC6BB00033AB45 /* LoadAddressDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadAddressDemoTests.m; sourceTree = "<group>"; };
+		49E1A9B723CC6BB00033AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E1A9CE23CD5C900033AB45 /* GIOMonitorCrashReport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashReport.c; sourceTree = "<group>"; };
+		49E1A9CF23CD5C900033AB45 /* GIOMonitorCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashReport.h; sourceTree = "<group>"; };
+		49E1A9D123CD5CB80033AB45 /* GIOMonitorCrashReportWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashReportWriter.h; sourceTree = "<group>"; };
+		49E1A9D223CD5CDE0033AB45 /* GIOMonitorCrashReportFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashReportFields.h; sourceTree = "<group>"; };
+		49E1A9D323CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashJSONCodec.c; sourceTree = "<group>"; };
+		49E1A9D423CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashJSONCodec.h; sourceTree = "<group>"; };
+		49E1A9D623CD5D960033AB45 /* GIOMonitorCrashFileUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashFileUtils.c; sourceTree = "<group>"; };
+		49E1A9D723CD5D960033AB45 /* GIOMonitorCrashFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashFileUtils.h; sourceTree = "<group>"; };
+		49E1A9D923CD5DD10033AB45 /* GIOMonitorCrashString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashString.h; sourceTree = "<group>"; };
+		49E1A9DA23CD5DD10033AB45 /* GIOMonitorCrashString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashString.c; sourceTree = "<group>"; };
+		49E1A9DC23CD5E030033AB45 /* GIOMonitorCrashObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashObjC.h; sourceTree = "<group>"; };
+		49E1A9DD23CD5E030033AB45 /* GIOMonitorCrashObjC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashObjC.c; sourceTree = "<group>"; };
+		49E1A9DF23CD5E9E0033AB45 /* GIOMonitorCrashCachedData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashCachedData.c; sourceTree = "<group>"; };
+		49E1A9E023CD5E9E0033AB45 /* GIOMonitorCrashCachedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashCachedData.h; sourceTree = "<group>"; };
+		49E1A9E223CD5F700033AB45 /* GIOMonitorCrashReportStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashReportStore.h; sourceTree = "<group>"; };
+		49E1A9E323CD5F700033AB45 /* GIOMonitorCrashReportStore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashReportStore.c; sourceTree = "<group>"; };
+		49E1A9E523CD5FF50033AB45 /* GIOMonitorCrashObjCApple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashObjCApple.h; sourceTree = "<group>"; };
+		49E1A9E623CD62040033AB45 /* GIOMonitorCrashC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrashC.h; sourceTree = "<group>"; };
+		49E1A9E723CD62040033AB45 /* GIOMonitorCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIOMonitorCrash.h; sourceTree = "<group>"; };
+		49E1A9E823CD62040033AB45 /* GIOMonitorCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIOMonitorCrash.m; sourceTree = "<group>"; };
+		49E1A9E923CD62040033AB45 /* GIOMonitorCrashC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GIOMonitorCrashC.c; sourceTree = "<group>"; };
+		D3AD0F90B830AC1846EB0CE4 /* Pods_LoadAddressDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadAddressDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B6DF48332B5FF6A0E5390B /* Pods-LoadAddressDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadAddressDemo.release.xcconfig"; path = "Target Support Files/Pods-LoadAddressDemo/Pods-LoadAddressDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E1A99323CC6BAF0033AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5D56D1E6D7FC0937B3FA8 /* Pods_LoadAddressDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E1A9AE23CC6BB00033AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6C651D286DF299A249ED9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				186C130245F6F2DA63D62BA1 /* Pods-LoadAddressDemo.debug.xcconfig */,
+				E7B6DF48332B5FF6A0E5390B /* Pods-LoadAddressDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0D08C263A40A7110F07F433C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD0F90B830AC1846EB0CE4 /* Pods_LoadAddressDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4937583D23CCC3D400DC045E /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				4937584D23CCC52100DC045E /* GIOMonitorCrashMonitorContext.h */,
+				4937584A23CCC4E100DC045E /* GIOMonitorCrashMonitorType.c */,
+				4937584B23CCC4E100DC045E /* GIOMonitorCrashMonitorType.h */,
+				4937584823CCC4AD00DC045E /* GIOMonitorCrashMonitor.c */,
+				4937584723CCC4AD00DC045E /* GIOMonitorCrashMonitor.h */,
+				4937584123CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.h */,
+				4937584223CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.m */,
+			);
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		49E1A98D23CC6BAF0033AB45 = {
+			isa = PBXGroup;
+			children = (
+				49E1A99823CC6BAF0033AB45 /* LoadAddressDemo */,
+				49E1A9B423CC6BB00033AB45 /* LoadAddressDemoTests */,
+				49E1A99723CC6BAF0033AB45 /* Products */,
+				0C6C651D286DF299A249ED9D /* Pods */,
+				0D08C263A40A7110F07F433C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49E1A99723CC6BAF0033AB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E1A99623CC6BAF0033AB45 /* LoadAddressDemo.app */,
+				49E1A9B123CC6BB00033AB45 /* LoadAddressDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E1A99823CC6BAF0033AB45 /* LoadAddressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				49E1A9FA23CDC7B20033AB45 /* MBProgressHUD */,
+				49E1A9CD23CD5C770033AB45 /* Recording */,
+				4937583D23CCC3D400DC045E /* Monitors */,
+				49E1A9C023CC75E70033AB45 /* Tools */,
+				49E1A99923CC6BAF0033AB45 /* AppDelegate.h */,
+				49E1A99A23CC6BAF0033AB45 /* AppDelegate.m */,
+				49E1A99F23CC6BAF0033AB45 /* ViewController.h */,
+				49E1A9A023CC6BAF0033AB45 /* ViewController.m */,
+				49E1A9A223CC6BAF0033AB45 /* Main.storyboard */,
+				49E1A9A523CC6BB00033AB45 /* Assets.xcassets */,
+				49E1A9A723CC6BB00033AB45 /* LaunchScreen.storyboard */,
+				49E1A9AA23CC6BB00033AB45 /* Info.plist */,
+				49E1A9AB23CC6BB00033AB45 /* main.m */,
+			);
+			path = LoadAddressDemo;
+			sourceTree = "<group>";
+		};
+		49E1A9B423CC6BB00033AB45 /* LoadAddressDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				49E1A9B523CC6BB00033AB45 /* LoadAddressDemoTests.m */,
+				49E1A9B723CC6BB00033AB45 /* Info.plist */,
+			);
+			path = LoadAddressDemoTests;
+			sourceTree = "<group>";
+		};
+		49E1A9C023CC75E70033AB45 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				49E1A9E523CD5FF50033AB45 /* GIOMonitorCrashObjCApple.h */,
+				49E1A9DD23CD5E030033AB45 /* GIOMonitorCrashObjC.c */,
+				49E1A9DC23CD5E030033AB45 /* GIOMonitorCrashObjC.h */,
+				49E1A9DA23CD5DD10033AB45 /* GIOMonitorCrashString.c */,
+				49E1A9D923CD5DD10033AB45 /* GIOMonitorCrashString.h */,
+				49E1A9D623CD5D960033AB45 /* GIOMonitorCrashFileUtils.c */,
+				49E1A9D723CD5D960033AB45 /* GIOMonitorCrashFileUtils.h */,
+				49E1A9D323CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.c */,
+				49E1A9D423CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.h */,
+				4937584423CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.c */,
+				4937584523CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.h */,
+				4937583B23CCC0F300DC045E /* GIOMonitorCrashStackCursor.h */,
+				4937583A23CCC0F200DC045E /* GIOMonitorCrashStackCursor.c */,
+				4937581D23CCC09600DC045E /* GIOMonitorCrashCPU_Apple.h */,
+				4937582823CCC09700DC045E /* GIOMonitorCrashCPU_arm.c */,
+				4937582023CCC09600DC045E /* GIOMonitorCrashCPU_arm64.c */,
+				4937581F23CCC09600DC045E /* GIOMonitorCrashCPU_x86_32.c */,
+				4937582923CCC09700DC045E /* GIOMonitorCrashCPU_x86_64.c */,
+				4937582423CCC09600DC045E /* GIOMonitorCrashCPU.h */,
+				4937582A23CCC09700DC045E /* GIOMonitorCrashCPU.c */,
+				4937582B23CCC09700DC045E /* GIOMonitorCrashDynamicLinker.h */,
+				4937581923CCC09600DC045E /* GIOMonitorCrashDynamicLinker.c */,
+				4937581A23CCC09600DC045E /* GIOMonitorCrashLogger.h */,
+				4937581E23CCC09600DC045E /* GIOMonitorCrashLogger.c */,
+				4937582623CCC09600DC045E /* GIOMonitorCrashMachineContext_Apple.h */,
+				4937582123CCC09600DC045E /* GIOMonitorCrashMachineContext.h */,
+				4937581823CCC09600DC045E /* GIOMonitorCrashMachineContext.c */,
+				4937581723CCC09500DC045E /* GIOMonitorCrashMemory.h */,
+				4937582223CCC09600DC045E /* GIOMonitorCrashMemory.c */,
+				4937581B23CCC09600DC045E /* GIOMonitorCrashStackCursor_MachineContext.h */,
+				4937582D23CCC09700DC045E /* GIOMonitorCrashStackCursor_MachineContext.c */,
+				4937582723CCC09600DC045E /* GIOMonitorCrashSymbolicator.h */,
+				4937582523CCC09600DC045E /* GIOMonitorCrashSymbolicator.c */,
+				4937581C23CCC09600DC045E /* GIOMonitorCrashSystemCapabilities.h */,
+				4937582C23CCC09700DC045E /* GIOMonitorCrashThread.h */,
+				4937582323CCC09600DC045E /* GIOMonitorCrashThread.c */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		49E1A9CD23CD5C770033AB45 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				49E1A9E723CD62040033AB45 /* GIOMonitorCrash.h */,
+				49E1A9E823CD62040033AB45 /* GIOMonitorCrash.m */,
+				49E1A9E923CD62040033AB45 /* GIOMonitorCrashC.c */,
+				49E1A9E623CD62040033AB45 /* GIOMonitorCrashC.h */,
+				49E1A9E323CD5F700033AB45 /* GIOMonitorCrashReportStore.c */,
+				49E1A9E223CD5F700033AB45 /* GIOMonitorCrashReportStore.h */,
+				49E1A9DF23CD5E9E0033AB45 /* GIOMonitorCrashCachedData.c */,
+				49E1A9E023CD5E9E0033AB45 /* GIOMonitorCrashCachedData.h */,
+				49E1A9D223CD5CDE0033AB45 /* GIOMonitorCrashReportFields.h */,
+				49E1A9D123CD5CB80033AB45 /* GIOMonitorCrashReportWriter.h */,
+				49E1A9CE23CD5C900033AB45 /* GIOMonitorCrashReport.c */,
+				49E1A9CF23CD5C900033AB45 /* GIOMonitorCrashReport.h */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		49E1A9FA23CDC7B20033AB45 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				49DCB2B323CF32C2006E04CB /* MBProgressHUD.h */,
+				49DCB2B423CF32C2006E04CB /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E1A99523CC6BAF0033AB45 /* LoadAddressDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E1A9BA23CC6BB00033AB45 /* Build configuration list for PBXNativeTarget "LoadAddressDemo" */;
+			buildPhases = (
+				939B9CECFD4EE27A1AE5E5A0 /* [CP] Check Pods Manifest.lock */,
+				49E1A99223CC6BAF0033AB45 /* Sources */,
+				49E1A99323CC6BAF0033AB45 /* Frameworks */,
+				49E1A99423CC6BAF0033AB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoadAddressDemo;
+			productName = LoadAddressDemo;
+			productReference = 49E1A99623CC6BAF0033AB45 /* LoadAddressDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49E1A9B023CC6BB00033AB45 /* LoadAddressDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E1A9BD23CC6BB00033AB45 /* Build configuration list for PBXNativeTarget "LoadAddressDemoTests" */;
+			buildPhases = (
+				49E1A9AD23CC6BB00033AB45 /* Sources */,
+				49E1A9AE23CC6BB00033AB45 /* Frameworks */,
+				49E1A9AF23CC6BB00033AB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E1A9B323CC6BB00033AB45 /* PBXTargetDependency */,
+			);
+			name = LoadAddressDemoTests;
+			productName = LoadAddressDemoTests;
+			productReference = 49E1A9B123CC6BB00033AB45 /* LoadAddressDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E1A98E23CC6BAF0033AB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = BeyondChao;
+				TargetAttributes = {
+					49E1A99523CC6BAF0033AB45 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					49E1A9B023CC6BB00033AB45 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 49E1A99523CC6BAF0033AB45;
+					};
+				};
+			};
+			buildConfigurationList = 49E1A99123CC6BAF0033AB45 /* Build configuration list for PBXProject "LoadAddressDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E1A98D23CC6BAF0033AB45;
+			productRefGroup = 49E1A99723CC6BAF0033AB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E1A99523CC6BAF0033AB45 /* LoadAddressDemo */,
+				49E1A9B023CC6BB00033AB45 /* LoadAddressDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E1A99423CC6BAF0033AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E1A9A923CC6BB00033AB45 /* LaunchScreen.storyboard in Resources */,
+				49E1A9A623CC6BB00033AB45 /* Assets.xcassets in Resources */,
+				49E1A9A423CC6BAF0033AB45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E1A9AF23CC6BB00033AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		939B9CECFD4EE27A1AE5E5A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoadAddressDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E1A99223CC6BAF0033AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E1A9E423CD5F700033AB45 /* GIOMonitorCrashReportStore.c in Sources */,
+				4937583523CCC09700DC045E /* GIOMonitorCrashSymbolicator.c in Sources */,
+				49E1A9EB23CD62040033AB45 /* GIOMonitorCrashC.c in Sources */,
+				49E1A9DB23CD5DD10033AB45 /* GIOMonitorCrashString.c in Sources */,
+				4937582E23CCC09700DC045E /* GIOMonitorCrashMachineContext.c in Sources */,
+				4937584623CCC46700DC045E /* GIOMonitorCrashStackCursor_Backtrace.c in Sources */,
+				4937583323CCC09700DC045E /* GIOMonitorCrashMemory.c in Sources */,
+				49DCB2B523CF32C2006E04CB /* MBProgressHUD.m in Sources */,
+				49E1A9EA23CD62040033AB45 /* GIOMonitorCrash.m in Sources */,
+				4937582F23CCC09700DC045E /* GIOMonitorCrashDynamicLinker.c in Sources */,
+				49E1A9D523CD5D4B0033AB45 /* GIOMonitorCrashJSONCodec.c in Sources */,
+				4937583123CCC09700DC045E /* GIOMonitorCrashCPU_x86_32.c in Sources */,
+				4937583023CCC09700DC045E /* GIOMonitorCrashLogger.c in Sources */,
+				4937583C23CCC0F300DC045E /* GIOMonitorCrashStackCursor.c in Sources */,
+				49E1A9A123CC6BAF0033AB45 /* ViewController.m in Sources */,
+				4937583423CCC09700DC045E /* GIOMonitorCrashThread.c in Sources */,
+				49E1A9DE23CD5E030033AB45 /* GIOMonitorCrashObjC.c in Sources */,
+				4937584C23CCC4E100DC045E /* GIOMonitorCrashMonitorType.c in Sources */,
+				49E1A99B23CC6BAF0033AB45 /* AppDelegate.m in Sources */,
+				49E1A9D023CD5C900033AB45 /* GIOMonitorCrashReport.c in Sources */,
+				4937584323CCC45B00DC045E /* GIOMonitorCrashMonitor_NSException.m in Sources */,
+				4937583723CCC09700DC045E /* GIOMonitorCrashCPU_x86_64.c in Sources */,
+				4937583223CCC09700DC045E /* GIOMonitorCrashCPU_arm64.c in Sources */,
+				4937583823CCC09700DC045E /* GIOMonitorCrashCPU.c in Sources */,
+				4937583923CCC09700DC045E /* GIOMonitorCrashStackCursor_MachineContext.c in Sources */,
+				4937584923CCC4AD00DC045E /* GIOMonitorCrashMonitor.c in Sources */,
+				49E1A9D823CD5D960033AB45 /* GIOMonitorCrashFileUtils.c in Sources */,
+				4937583623CCC09700DC045E /* GIOMonitorCrashCPU_arm.c in Sources */,
+				49E1A9E123CD5E9E0033AB45 /* GIOMonitorCrashCachedData.c in Sources */,
+				49E1A9AC23CC6BB00033AB45 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E1A9AD23CC6BB00033AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E1A9B623CC6BB00033AB45 /* LoadAddressDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49E1A9B323CC6BB00033AB45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49E1A99523CC6BAF0033AB45 /* LoadAddressDemo */;
+			targetProxy = 49E1A9B223CC6BB00033AB45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49E1A9A223CC6BAF0033AB45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E1A9A323CC6BAF0033AB45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49E1A9A723CC6BB00033AB45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E1A9A823CC6BB00033AB45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E1A9B823CC6BB00033AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49E1A9B923CC6BB00033AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E1A9BB23CC6BB00033AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186C130245F6F2DA63D62BA1 /* Pods-LoadAddressDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				INFOPLIST_FILE = LoadAddressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joker.li.JokerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49E1A9BC23CC6BB00033AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B6DF48332B5FF6A0E5390B /* Pods-LoadAddressDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				INFOPLIST_FILE = LoadAddressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joker.li.JokerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49E1A9BE23CC6BB00033AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoadAddressDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = growingio.LoadAddressDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoadAddressDemo.app/LoadAddressDemo";
+			};
+			name = Debug;
+		};
+		49E1A9BF23CC6BB00033AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoadAddressDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = growingio.LoadAddressDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoadAddressDemo.app/LoadAddressDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E1A99123CC6BAF0033AB45 /* Build configuration list for PBXProject "LoadAddressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E1A9B823CC6BB00033AB45 /* Debug */,
+				49E1A9B923CC6BB00033AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E1A9BA23CC6BB00033AB45 /* Build configuration list for PBXNativeTarget "LoadAddressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E1A9BB23CC6BB00033AB45 /* Debug */,
+				49E1A9BC23CC6BB00033AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E1A9BD23CC6BB00033AB45 /* Build configuration list for PBXNativeTarget "LoadAddressDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E1A9BE23CC6BB00033AB45 /* Debug */,
+				49E1A9BF23CC6BB00033AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E1A98E23CC6BAF0033AB45 /* Project object */;
+}
